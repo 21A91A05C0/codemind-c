@@ -1,21 +1,22 @@
-#include <stdio.h>
-
-int main() {
-  // size of pyramid
-  // can also be read from stdin
-  int size ;
-  scanf("%d",&size);
-  for (int i = 0; i < size; i++) {
-    // printing spaces
-    for (int j = 0; j < size-i-1; j++) {
-      printf(" ");
-    }
-    // printing numbers
-    for (int k = 0; k < 2*i+1; k++) {
-      printf("%d", i+1);
-    }
-    printf("
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            if(j==i)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("x");
+            }
+        }
+        printf("
 ");
-  }
-  return 0;
+    }
 }
