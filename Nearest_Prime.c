@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int t,n,i,c=0,j,a[10000],b[10000],p,d,m,k;
+    scanf("%d",&t);
+    while(t>0)
+    {
+        m=0;
+        k=0;
+        scanf("%d",&n);
+        for(i=0;i<=n+100;i++)
+        {
+            c=2;
+            for(j=2;j<i;j++)
+            {
+               if(i%j==0)
+               {
+                   c++;
+               }
+            }
+            if(c==2)
+            {
+                a[k]=abs(n-i);
+                b[k]=i;
+                m++;
+                k++;
+            }
+        }
+        d=a[0];
+        for(i=0;i<m;i++)
+        {
+            if(d>a[i])
+            {
+                d=a[i];
+                p=b[i];
+            }
+        }
+        printf("%d
+",p);
+        t--;
+    }
+}
