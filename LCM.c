@@ -14,8 +14,7 @@
 
      lcm=(num1*num2)/gcd;
 
-     printf("%d
-",lcm);
+     printf("%d",lcm);
 
      return 0;
  }
