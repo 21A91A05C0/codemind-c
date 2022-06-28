@@ -19,13 +19,8 @@ int main()
                 if(max<sum)
                 {
                     max=sum;
-                    
                 }
-             
         }
-  
     }
     printf("%d ",max);
- 
-    
 }
