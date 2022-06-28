@@ -11,7 +11,7 @@ int main()
         }
     }
     for(j=0;j<c;j++)
-    { // max=-9999;
+    {
     sum=0;
         for(i=0;i<r;i++)
         {  
