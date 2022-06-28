@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int i,j,arr[1000][1000],n,m,sum=0,sum1=0;
-    scanf("%d %d",&m,&n);
-    for(i=0;i<m;i++)
+    int n,m,i,j,arr[1000][1000],sum=0,sum1=0;
+    scanf("%d %d",&n,&m);
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=0;j<m;j++)
         {
             scanf("%d",&arr[i][j]);
         }
     }
-    for(i=0;i<m;i++)
+    for(i=0;i<n;i++)
     {
-        for(j=0;j<n;j++)
+        for(j=0;j<m;j++)
         {
             if(i%2==0)
             {
@@ -24,6 +24,6 @@ int main()
             }
         }
     }
-    printf("%d %d",sum,sum1);
+    printf("%d %d ",sum,sum1);
     
 }
