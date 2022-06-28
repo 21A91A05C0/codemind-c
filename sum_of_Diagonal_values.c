@@ -14,11 +14,12 @@ int main()
     {
         for(j=0;j<m;j++)
         {
-            if(i==j or i+j==n-1)
+            if(i==j || i+j==n-1)
             {
                 sum=sum+arr[i][j];
             }
         }
     }
     printf("%d",sum);
+    
 }
