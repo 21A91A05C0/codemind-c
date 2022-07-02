@@ -8,15 +8,13 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    k=0;
-    for(i=0;i<n;i++)
+    for(i=n-1;i>=0;i--)
     {
         if(arr[i]%2==0)
         {
-            c++;
-            a[k]=arr[i];
-            k++;
+            printf("%d",arr[i]);
+            break;
         }
     }
-    printf("%d",a[c-1]);
+    
 }
