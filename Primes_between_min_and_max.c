@@ -40,8 +40,6 @@ int fun(int *arr,int n,int max,int min)
             {
                 c++;
             }
-            
-            
         }
         return c;
     }
